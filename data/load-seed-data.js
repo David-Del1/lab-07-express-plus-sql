@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import client from '../lib/client.js';
 // import our seed data:
-import cats from './cats.js';
+import books from './cats.js';
 
 run();
 
@@ -10,12 +10,12 @@ async function run() {
   try {
 
     await Promise.all(
-      cats.map(cat => {
+      books.map(book => {
         return client.query(`
-          INSERT INTO cats (name, type, url, year, lives, is_sidekick)
-          VALUES ($1, $2, $3, $4, $5, $6);
+          INSERT INTO books (title, author, genre, image_url, pub_year)
+          VALUES ($1, $2, $3, $4, $5);
         `,
-        [cat.name, cat.type, cat.url, cat.year, cat.lives, cat.isSidekick]);
+        [book.title, book.author, book.genre, book.image_url, book.pub_year]);
       })
     );
     

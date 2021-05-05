@@ -1,69 +1,82 @@
 // example seed data
-const cats = [
+const books = [
   {
-    name: 'Felix',
-    type: 'Tuxedo',
-    url: 'cats/felix.png',
-    year: 1892,
-    lives: 3,
-    isSidekick: false
+    title: 'The Beginning of Infinity',
+    author: 'David Deutsch',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/felix.png',
+    pub_year: 2011
   },
   {
-    name: 'Garfield',
-    type: 'Orange Tabby',
-    url: 'cats/garfield.jpeg',
-    year: 1978,
-    lives: 7,
-    isSidekick: false
+    title: 'The Fabric of Reality',
+    author: 'Orange Tabby',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/garfield.jpeg',
+    pub_year: 1998
   },
   {
-    name: 'Duchess',
-    type: 'Angora',
-    url: 'cats/duchess.jpeg',
-    year: 1970,
-    lives: 9,
-    isSidekick: false
+    title: 'Conjectures & Refutations',
+    author: 'Angora',
+    genre: 'Philosophy',
+    image_url: 'cats/duchess.jpeg',
+    pub_year: 1963
   },
   {
-    name: 'Stimpy',
-    type: 'Manx',
-    url: 'cats/stimpy.jpeg',
-    year: 1990,
-    lives: 1,
-    isSidekick: true
+    title: 'I Am A Strange Loop',
+    author: 'Manx',
+    genre: 'Philosophy',
+    image_url: 'cats/stimpy.jpeg',
+    pub_year: 2007
   },
   {
-    name: 'Sylvester',
-    type: 'Tuxedo',
-    url: 'cats/sylvester.jpeg',
-    year: 1945,
-    lives: 1,
-    isSidekick: true
+    title: 'The Ascent of Man',
+    author: 'Tuxedo',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/sylvester.jpeg',
+    pub_year: 1945
   },
   {
-    name: 'Tigger',
-    type: 'Orange Tabby',
-    url: 'cats/tigger.jpeg',
-    year: 1928,
-    lives: 8,
-    isSidekick: false
+    title: 'Enlightenment Now',
+    author: 'Orange Tabby',
+    genre: 'Social Science/Nonficiton',
+    image_url: 'cats/tigger.jpeg',
+    pub_year: 1928
   },
   {
-    name: 'Hello Kitty',
-    type: 'Angora',
-    url: 'cats/hello-kitty.jpeg',
-    year: 1974,
-    lives: 9,
-    isSidekick: false
+    title: 'The Selfish Gene',
+    author: 'Angora',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/hello-kitty.jpeg',
+    pub_year: 1974
   },
   {
-    name: 'Hobbs',
-    type: 'Orange Tabby',
-    url: 'cats/hobbs.jpeg',
-    year: 1985,
-    lives: 6,
-    isSidekick: true
+    title: 'The Blind Watchmaker',
+    author: 'Angora',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/hello-kitty.jpeg',
+    pub_year: 1974
+  },
+  {
+    title: 'The Science of Can and Can\'t',
+    author: 'Orange Tabby',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/hobbs.jpeg',
+    pub_year: 1985
+  },
+  {
+    title: 'Scale',
+    author: 'Orange Tabby',
+    genre: 'Science/Nonfiction',
+    image_url: 'cats/hobbs.jpeg',
+    pub_year: 1985
+  },
+  {
+    title: 'Homo Deus',
+    author: 'Orange Tabby',
+    genre: 'Social Science',
+    image_url: 'cats/hobbs.jpeg',
+    pub_year: 1985
   }
 ];
 
-export default cats;
+export default books;
