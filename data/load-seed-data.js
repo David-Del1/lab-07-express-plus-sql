@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import client from '../lib/client.js';
 // import our seed data:
-import books from './cats.js';
+import books from './books.js';
 
 run();
 
