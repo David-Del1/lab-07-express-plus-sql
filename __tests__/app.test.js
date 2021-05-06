@@ -74,6 +74,18 @@ describe('API Routes', () => {
       expect(response.body).toEqual(book1);
     });
 
+    it('GET list of books from /api/books', async () => {
+      const r1 = await request.post('/api/books').send(book2);
+      book2 = r1.body;
+      const r2 = await request.post('/api/books').send(book3);
+      book3 = r2.body;
+
+      const response = await request.get('/api/books');
+
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual(expect.arrayContaining([book1, book2, book3]));
+    });
+
   });
 
   //   describe.skip('seed data tests', () => {
