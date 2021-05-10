@@ -115,7 +115,7 @@ describe('API Routes', () => {
       expect(response.body).toEqual({ ...book2, userName: user.name });
     });
 
-    it.skip('DELETE book2 from /api/books/:id', async () => {
+    it('DELETE book2 from /api/books/:id', async () => {
       const response = await request.delete(`/api/books/${book2.id}`);
       expect(response.status).toBe(200);
       expect(response.body).toEqual(book2);
@@ -123,7 +123,7 @@ describe('API Routes', () => {
       const getResponse = await request.get('/api/books');
 
       expect(getResponse.status).toBe(200);
-      expect(getResponse.body).toEqual(expect.arrayContaining([book1, book3]));
+      expect(getResponse.body.find(book => book.id === book2.id)).toBeUndefined();
     });
 
   });
