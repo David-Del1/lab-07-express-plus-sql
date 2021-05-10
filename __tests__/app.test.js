@@ -128,7 +128,7 @@ describe('API Routes', () => {
 
   });
 
-  describe.skip('seed data tests', () => {
+  describe('seed data tests', () => {
 
     beforeAll(() => {
       execSync('npm run setup-db');
