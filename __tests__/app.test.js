@@ -97,7 +97,7 @@ describe('API Routes', () => {
       const response = await request.get('/api/books');
 
       expect(response.status).toBe(200);
-      
+
       const expected = [book1, book2, book3].map(book => {
         return { 
           userName: user.name,
@@ -108,11 +108,11 @@ describe('API Routes', () => {
       expect(response.body).toEqual(expect.arrayContaining(expected));
     });
 
-    it.skip('GET book from /api/books/:id', async () => {
+    it('GET book from /api/books/:id', async () => {
       const response = await request.get(`/api/books/${book2.id}`);
 
       expect(response.status).toBe(200);
-      expect(response.body).toEqual(book2);
+      expect(response.body).toEqual({ ...book2, userName: user.name });
     });
 
     it.skip('DELETE book2 from /api/books/:id', async () => {
