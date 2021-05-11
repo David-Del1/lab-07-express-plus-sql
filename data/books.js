@@ -18,7 +18,7 @@ const books = [
     title: 'Conjectures & Refutations',
     author: 'Karl Popper',
     genre: 'Philosophy',
-    image_url: 'assets/CaR.jpg',
+    image_url: '/assets/CaR.jpg',
     pub_year: 1963
   },
   {
